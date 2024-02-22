@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5em 1em
+}
+
+.container-footer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 1em
+}
+
+/* Nav Bar */
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background-color: #2E323F;
+}
+
+.logo {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: white;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0px, -11px) rotate(45deg);
+  }
+
+.navbar {
+    background-color: #2E323F;
+    display: flex;
+    justify-content: center;
+}
+.nav--items {
+    display: none;
+    color: white;
+    font-family: 'oswald';
+    font-size: large;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav--items.change {
+    display: block;
+}
+
+.nav--primary, .nav--secondary {
+    list-style: none;
+}
+
+.nav--primary li:hover, .nav--secondary li:hover {
+    color: #6F737F;
+    cursor: pointer;
+}
+
+.nav--secondary {
+    margin-top: 1em
+}
+
+.nav--secondary li:last-child {
+    background-color: #A59678;
+    padding: 0.2em 1.5em;
+    border-radius: 100px;
+    margin-top: 0.2em;
+}
+
+.nav--secondary li:last-child:hover {
+    background-color: #877a60;
+    color: white
+}
+
+
+
+.desktop {
+    display: none
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3B4050;
+}
+
+.hero--main {
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    line-height: 1.2em;
+}
+
+.hero--main span {
+    color: #A59678
+}
+
+.hero--text {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    margin-block-start: 2em;
+}
+
+.hero--button {
+    color: white;
+    background-color: #A59678;
+    margin-top: 1em;
+    padding: 0.4em 1.5em;
+    border-radius: 1000px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'oswald';
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+.hero--button:hover {
+    background-color: #877a60;
+    color: white
+}
+
+
+/* Qualities Section */
+
+.qualities {
+    background-color: #edecec;
+    text-align: center;
+}
+
+.qualities--header {
+    color: #A59678;
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.qualities--text {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 1rem;
+    margin-block: 0.5em 2em;
+}
+
+/* Section-3 */
+.section-3 h2{
+    color: #A59678;
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+}
+
+.section-3 p{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.section-3 img{
+    margin-block: 2em;
+    width: 100%
+}
+
+.steps {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.steps--1, .steps--2, .steps--3{
+    background-color: #3B4050;
+    margin-block: 1em;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
+
+.steps--h2 {
+    color: white;
+    font-family: 'Oswald';
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    font-size: 1.5rem;
+
+}
+
+.steps--p {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #3B4050 ;
+}
+
+footer h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Oswald';
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    font-size: 2rem;
+}
+
+.footer-div {
+    margin-block: 1em
+}
+
+.footer--h3 {
+    color: #A59678;
+    margin-bottom: 0.5em;
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer--p, .footer--list{
+    color: #6F737F;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    list-style: none;
+}
+
+.footer--list li {
+    margin-block: 0.5em;
+    width: fit-content;
+}
+
+.footer--list li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footer--list {
+    display: none;
+}
+
+.footer--list.change {
+    display: block;
+}
+
+#arrow1, #arrow2, #arrow3 {
+    display: inline-block;
+    transform: rotateZ(90deg);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#arrow1.change, #arrow2.change, #arrow3.change {
+    display: inline-block;
+    transform: rotateZ(-90deg);
+}
+
+
+
+@media (min-width: 700px) {
+    .desktop {
+        display: block;
+    }
+    .nav--items {
+        display: flex;
+    }
+    .nav--primary {
+        display: flex;
+        gap: 1em;
+        margin-right: 2em
+    }
+    .nav--secondary {
+        display: flex;
+        margin: 0;
+        gap: 1em
+    }
+    .nav--secondary li:last-child {
+        margin: 0;
+        padding: 0 1em
+    }
+
+    .mobile {
+        display: none
+    }
+}
+
+@media (min-width: 1000px) {
+    .steps {
+        display: flex;
+        gap: 1em;
+    }
+    .qualities-div {
+        display: flex;
+        gap: 5em;
+    }
+    .hero-div {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        gap: 3em
+    }
+    
+    .hero--main {
+        font-size: 5rem;
+    }
+
+    .hero--text {
+        font-size: 1.5rem;
+    }
+
+    .hero--button {
+        font-size: 1.5rem;
+    }
+
+    .qualities--header, .steps--h2{
+        font-size: 1.875rem;
+    }
+
+    .qualities--text, .steps--p{
+        font-size: 1.125rem;
+    }
+
+    .section-3 h2 {
+        font-size: 2.25rem;
+    }
+
+    .section-3 p {
+        font-size: 1.3rem;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-div:first-child {
+        width: 40%
+    }
+
+    .footer--header {
+        font-size: 2rem;
+    }
+
+    #arrow1, #arrow2, #arrow3 {
+        visibility:hidden;
+        transition: 0s;
+    }
+
+    #footer-1, #footer-2, #footer-3 {
+        display: block;
+    }
+}
+  
+
+
+
