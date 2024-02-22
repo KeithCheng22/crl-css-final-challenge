@@ -44,3 +44,25 @@ arrow3.addEventListener('click', () => {
     footer2.classList.remove('change')
     footer1.classList.remove('change')
 })
+
+let options = {
+    threshold: 1.0,
+  };
+
+
+  let callback = (entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('change')
+        } 
+    })
+
+}
+
+let observer = new IntersectionObserver(callback, options);
+
+let targets = document.querySelectorAll(".quality");
+
+targets.forEach(target => observer.observe(target))
+;
+

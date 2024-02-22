@@ -157,6 +157,10 @@ transition: 0.4s;
     background-color: #edecec;
     text-align: center;
 }
+.qualities--1,  .qualities--2, .qualities--3{
+    opacity: 0;
+    transition: 1000ms;
+}
 
 .qualities--header {
     color: #A59678;
@@ -170,6 +174,10 @@ transition: 0.4s;
     font-weight: 200;
     font-size: 1rem;
     margin-block: 0.5em 2em;
+}
+
+.qualities--1.change, .qualities--2.change, .qualities--3.change  {
+    opacity: 1;
 }
 
 /* Section-3 */
